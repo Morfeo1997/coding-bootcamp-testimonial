@@ -1,0 +1,183 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+	color: hsl(240, 38%, 20%);
+	background-image: ;
+	min-height: 100vh;
+	font-family: 'inter', sans-serif;
+}
+
+.main-container{
+	display: flex;
+	flex-direction: row;
+	min-height: 18em;
+	min-width: 38em;
+}
+
+.header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(images/pattern-quotes.svg);
+	background-repeat: no-repeat;
+	background-position: left 3em top 1em;
+	padding: 1.5em;
+	width: 70%;
+	height: 100%;
+	z-index: 2;
+}
+
+.pic-container{
+	display: flex;
+	flex-direction: column;
+	background-image: url("images/pattern-bg.svg");
+	background-position: bottom 2em right 4em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50%;
+	z-index: 1;
+}
+
+.pic{
+	position: relative;
+	top: 1em;
+	right: 2.5em;
+	width: 78%;
+	height: 75%;
+	border-radius: 0.5em;
+	z-index: 1;
+}
+
+.testimonial{
+	font-weight: lighter;
+}
+
+.signature{
+	font-weight: bold;
+	color: hsl(240, 38%, 20%);
+}
+
+.user-info{
+	font-size: 18px;
+	color: hsl(240, 18%, 77%);
+}
+
+.tanya{
+	display: flex;
+
+}
+
+
+.second-main-container{
+	display: none;
+	flex-direction: row;
+	min-height: 18em;
+	min-width: 38em;
+}
+
+.btn-container{
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	width: 3.5em;
+	z-index: 2;
+	background-color: white;
+	border-radius: 1em;
+	box-shadow: 1px 11px 22px 0px rgba(0,0,0,0.75);
+}
+
+.btn{
+	display: flex;
+	padding: 0.5em 0.7em;
+	cursor: pointer;
+}
+
+.footer{
+	color: hsl(247, 50%, 30%);
+}
+
+.links{
+	color: hsl(240, 38%, 20%);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.links:hover{
+	color: hsl(240, 10%, 20%);
+}
+
+
+
+
+
+@media(max-width: 375px){
+
+	.main-container{
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		min-width: 12em;
+		min-height: 15em;
+	}
+
+	.header{
+		text-align: center;
+		font-size: 22px;
+		width: 95%;
+		height: 45%;
+		background-position: top 0 left 5.4em;
+	}
+
+
+	.pic-container{
+		display: flex;
+		position: relative;
+		background-position: top  left ;
+		background-size: 92%;
+		top: 0;
+		left: 0;
+		align-self: center;
+		width: 95%;
+		height: 55%;
+		margin: 0.5em;
+	}
+
+	.pic{
+		display: flex;
+		position: relative;
+		top: 1em;
+		left: 1.8em;
+		width: 70%;
+		height: 50%;
+		border-radius: 0.5em;
+	}
+
+	.btn-container{
+		position: relative;
+		display: flex;
+		align-self: center;
+	}
+
+	.second-main-container{
+		display: none;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		min-width: 12em;
+		min-height: 15em;
+	}
+
+
+	.footer{
+		font-size: 16px;
+		text-align: center;
+	}
+}
